@@ -17,7 +17,7 @@ int main(void)
 	
 	for (int a = 0; a <= SIZE; a++)
 	{
-		if ((phrase[a] == ' ')&&(isalnum(phrase[a-1])))
+		if (( phrase[a] == ' ') && ( isalnum(phrase[a-1] )))
 		{
 			mots[a] = '\n';
 			n++;
@@ -26,11 +26,11 @@ int main(void)
 		{
 			mots[a] = phrase[a];
 		}
+		//cas si plusieurs espaces : a faire
 	}
 
 	printf("%s", mots);
-
-	printf("\nil y a %d argument\n", n);
+	printf("\n%d\n", n);
 
 	system("PAUSE");
 	return (EXIT_SUCCESS);
